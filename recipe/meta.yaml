@@ -1,5 +1,5 @@
 {% set name = "prismatique" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/prismatique-{{ version }}.tar.gz
-  sha256: c6bb8ccc3e3c71f6244e062581ec12a68284d8288d0c784654f283ecbe869acd
+  sha256: c15d1a77a5e8764bb0d5a65c25c797e564f7d1ba6b42d32b8cfa58c9178cfefb
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - embeam
+    - embeam >=0.0.5
     - h5pywrappers
     - pyprismatic >=2.0
 
