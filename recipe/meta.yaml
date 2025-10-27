@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - embeam
+    - embeam >=0.0.5
     - h5pywrappers
     - pyprismatic >=2.0
 
